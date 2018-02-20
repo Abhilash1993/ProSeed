@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const htmlConfig = {
-  title: "sampleProject",
+  title: "ProSeed",
   template: "./src/index.ejs",
   appMountId: "root"
 };
