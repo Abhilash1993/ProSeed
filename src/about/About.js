@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../utils/font.less';
+import SidePanel from '../common/components/sidePanel/sidePanel';
+import '../common/common.less';
 
 export default class About extends React.Component {
   constructor(props) {
@@ -10,8 +12,8 @@ export default class About extends React.Component {
   render() {
     return (
       <div>
-        <Link to="/">home</Link>
-        <h2 className = "title">This is a About page.</h2>
+        < SidePanel/>
+        <div className = "content-root title">This is a About page.</div>
       </div>
     );
   }

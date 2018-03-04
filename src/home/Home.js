@@ -3,6 +3,8 @@ import {connect} from 'react-redux';
 import ACTION from '../common/action_constants';
 import { Link } from 'react-router-dom';
 import JsonView from '../common/components/JsonView';
+import SidePanel from '../common/components/sidePanel/sidePanel';
+import '../common/common.less';
 
 class Home extends React.Component {
   constructor(props) {
@@ -12,9 +14,10 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <Link to="/about" >about</Link>
-        <h1 >You are on the home page.. {this.props.home.user.login}</h1>
-        {this.props.home.load && <JsonView /> }
+        <SidePanel/>
+        <div className="content-root">
+            You are on the home page.. {this.props.home.user.login}
+        </div>
       </div>
     );
   }

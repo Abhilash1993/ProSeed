@@ -10,6 +10,7 @@ import { BrowserRouter, Switch, Route, Router } from 'react-router-dom';
 import Home from './home/Home';
 import About from './about/About';
 import Dummy from './dummy/Dummy';
+import Route1 from './home/route1/route1';
 
 const routes = (
     <BrowserRouter history={history}>
@@ -17,6 +18,7 @@ const routes = (
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
         <Route exact path='/dummy' component={Dummy} />
+        <Route exact path='/route1' component={Route1} />
       </Switch>
     </BrowserRouter>
 );
