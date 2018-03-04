@@ -14,8 +14,7 @@ class SidePanel extends React.Component {
             <div className="side-bar-root">
                 <div className="menu">Menu</div>
                 <div className="menu-item"><Link to="/about" >SIDE 1</Link></div>
-                <div className="menu-item"><Link to="/" >SIDE 2</Link></div>
-                <div className="menu-item"><Link to="/route1" >SIDE 3</Link></div>
+                <div className="menu-item"><Link to="/route1" >SIDE 2</Link></div>
             </div>
         );
     }
